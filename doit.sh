@@ -2,6 +2,7 @@
 # Follow the install steps at the main site
 # https://docs.getindico.io/en/stable/installation/development/
 
+docker compose up -d
 
 psql -p 5432 -U postgres -h localhost -c "ALTER USER postgres WITH CREATEDB;"
 createdb indico_template -O postgres -p 5432 -U postgres -h localhost
