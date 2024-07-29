@@ -12,6 +12,7 @@ python -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
 pip install -e '.[dev]'
+npm ci
 indico setup wizard --dev
 brew install weasyprint
 export DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib:$DYLD_FALLBACK_LIBRARY_PATH
